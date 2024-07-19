@@ -393,6 +393,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 endif
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch-service.xiaomi
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti \
