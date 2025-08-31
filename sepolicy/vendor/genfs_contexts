@@ -7,9 +7,6 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state           
 # Display Exposure
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable                 u:object_r:vendor_sysfs_graphics:s0
 
-# Display HBM
-genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/hbm                          u:object_r:vendor_sysfs_graphics:s0
-
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc                                            u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable                              u:object_r:vendor_sysfs_fingerprint:s0
@@ -57,11 +54,6 @@ genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16_slave/power_supply/batt_v
 genfscon sysfs /bus/iio/devices                                                                     u:object_r:sysfs_iio:s0
 
 # LED
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/flashlight/brightness   u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/led:torch_0/brightness  u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/led:torch_1/brightness  u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/led:switch_0/brightness u:object_r:sysfs_leds:s0
-genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm8150l@5:qcom,leds@d300/leds/led:switch_1/brightness u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/flashlight/brightness   u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/led:torch_0/brightness  u:object_r:sysfs_leds:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d300/leds/led:torch_1/brightness  u:object_r:sysfs_leds:s0
@@ -70,20 +62,6 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.q
 
 # RTC
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm8150@0:qcom,pm8150_rtc/rtc  u:object_r:sysfs_rtc:s0
-
-# SSR
-genfscon sysfs /devices/platform/soc/soc:qcom,ipa_fws/subsys0/restart_level              u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,ipa_uc/subsys1/restart_level               u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/17300000.qcom,lpass/subsys2/restart_level           u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/8300000.qcom,turing/subsys3/restart_level           u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/aab0000.qcom,venus/subsys4/restart_level            u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/188101c.qcom,spss/subsys5/restart_level             u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/abb0000.qcom,cvpss/subsys6/restart_level            u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/5c00000.qcom,ssc/subsys7/restart_level              u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,kgsl-hyp/subsys8/restart_level             u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/b0000000.qcom,cnss-qca6390/subsys9/restart_level    u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,mdm0/subsys10/restart_level                u:object_r:sysfs_ssr_toggle:s0
-genfscon sysfs /devices/platform/soc/9800000.qcom,npu/subsys11/restart_level             u:object_r:sysfs_ssr_toggle:s0
 
 # Touchpanel
 genfscon sysfs /touchpanel                                                                          u:object_r:sysfs_touchpanel:s0
