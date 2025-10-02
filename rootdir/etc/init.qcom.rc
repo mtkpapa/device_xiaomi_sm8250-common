@@ -66,6 +66,9 @@ on init
     # Allow both charger and hal_light to access panel0 backlight
     chown system system /sys/class/backlight/panel0-backlight/brightness
 
+    # default country code
+    setprop ro.boot.wificountrycode 00
+
 on post-fs
     mkdir /mnt/vendor/dsp 0770 root root
     copy /vendor/dsp/cdsp/fastrpc_shell_3 /mnt/vendor/dsp/fastrpc_shell_3
